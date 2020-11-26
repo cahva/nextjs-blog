@@ -1,5 +1,9 @@
-POST http://localhost:3000/api/hello
-content-type: application/json
+@baseurl = http://localhost:3000/api
+@jsoncontent = application/json
+
+# @name hello
+POST {{baseurl}}/hello
+content-type: {{jsoncontent}}
 
 {
   "name": "Markku"
